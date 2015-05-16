@@ -19,6 +19,7 @@ java_test(
   srcs = glob(["src/test/**/*.java"]),
   deps = [
     ":app-lib",
+    "//persistence",
     "//external:hamcrest-core-jar",
     "//external:junit-jar",
   ],
