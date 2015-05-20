@@ -10,6 +10,8 @@ java_library(
   name = "app-lib",
   srcs = glob(["src/main/**/*.java"]),
   deps = [
+    "//logging/src/main/java/logging",
+    "//logging/src/main/java/logging/implementations",
     "//persistence",
   ],
 )

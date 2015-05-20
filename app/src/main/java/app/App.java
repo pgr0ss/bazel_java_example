@@ -1,5 +1,6 @@
 package app;
 
+import logging.Logger;
 import persistence.Repository;
 
 public class App {
@@ -20,6 +21,7 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().go());
+        Logger logger = new Logger();
+        logger.log(new App().go());
     }
 }
