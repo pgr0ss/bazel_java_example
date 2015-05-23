@@ -1,10 +1,11 @@
 # bazel_java_example
 
-An example of setting up a multi project bazel build.
+An example of using bazel on a multi-module, maven style project.
 
-It's composed of two parts:
+It's composed of three parts:
+* logging - a java library
 * persistence - a java library
-* app - a java application that uses the library
+* app - a java application that uses the libraries
 
 ## Commands
 
