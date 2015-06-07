@@ -1,13 +1,13 @@
 maven_jar(
-  name = "junit",
-  group_id = "junit",
-  artifact_id = "junit",
-  version = "4.12"
+  name = "guava",
+  group_id = "com.google.guava",
+  artifact_id = "guava",
+  version = "18.0"
 )
 
 bind(
-  name = "junit-jar",
-  actual = "@junit//jar"
+  name = "guava-jar",
+  actual = "@guava//jar"
 )
 
 maven_jar(
@@ -21,3 +21,16 @@ bind(
   name = "hamcrest-core-jar",
   actual = "@hamcrest-core//jar"
 )
+
+maven_jar(
+  name = "junit",
+  group_id = "junit",
+  artifact_id = "junit",
+  version = "4.12"
+)
+
+bind(
+  name = "junit-jar",
+  actual = "@junit//jar"
+)
+

@@ -9,9 +9,11 @@ java_binary(
 java_test(
   name = "test",
   srcs = glob(["src/test/**/*.java"]),
+  data = glob(["src/test/resources/**"]),
   deps = [
     "//app/src/main/java/app",
     "//persistence/src/main/java/persistence",
+    "//external:guava-jar",
     "//external:hamcrest-core-jar",
     "//external:junit-jar",
   ],
