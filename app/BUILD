@@ -6,6 +6,15 @@ java_binary(
   ],
 )
 
+java_binary(
+  name = "app_repl",
+  main_class = "jdk.internal.jshell.tool.JShellTool",
+  runtime_deps = [
+    "//app/src/main/java/app",
+    "//third_party:kulla_jshell",
+  ],
+)
+
 java_test(
   name = "test",
   srcs = glob(["src/test/**/*.java"]),
