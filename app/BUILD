@@ -7,7 +7,7 @@ java_binary(
 )
 
 java_binary(
-  name = "app_repl",
+  name = "repl",
   main_class = "jdk.internal.jshell.tool.JShellTool",
   runtime_deps = [
     "//app/src/main/java/app",
